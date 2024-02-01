@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <div class="calc-container">
+            <div class="calc__display">
+                <div data-operation class="calc__operation"></div>
+                <div class="calc__userInput">
+                    <p data-userInput>0</p>
+                </div>
+            </div>
+            <div class="calc__input-container">
+                <button data-clear class="calc__cell">C</button>
+                <button data-control-btn data-backspace class="calc__cell backspace">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M2.515 10.674a1.875 1.875 0 0 0 0 2.652L8.89 19.7c.352.351.829.549 1.326.549H19.5a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-9.284c-.497 0-.974.198-1.326.55l-6.375 6.374ZM12.53 9.22a.75.75 0 1 0-1.06 1.06L13.19 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 1 0 1.06-1.06L15.31 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-1.72 1.72-1.72-1.72Z" clip-rule="evenodd" />
+                    </svg>                      
+                </button>
+                <button data-number class="calc__cell" value="7">7</button>
+                <button data-number class="calc__cell" value="8">8</button>
+                <button data-number class="calc__cell" value="9">9</button>
+                <button data-control-btn data-division class="calc__cell" value="/">&divide;</button>
+                <button data-number class="calc__cell" value="4">4</button>
+                <button data-number class="calc__cell" value="5">5</button>
+                <button data-number class="calc__cell" value="6">6</button>
+                <button data-control-btn data-product class="calc__cell" value="*">&times;</button>
+                <button data-number class="calc__cell" value="1">1</button>
+                <button data-number class="calc__cell" value="2">2</button>
+                <button data-number class="calc__cell" value="3">3</button>
+                <button data-control-btn data-substraction class="calc__cell" value="-">&minus;</button>
+                <button data-control-btn data-equals class="calc__cell" value="=">&equals;</button>
+                <button data-number class="calc__cell" value="0">0</button>
+                <button data-control-btn data-float class="calc__cell" value=".">.</button>
+                <button data-control-btn data-addition class="calc__cell" value="+">&plus;</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
